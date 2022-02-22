@@ -220,10 +220,10 @@ function updateGameArea() {
         maxGap = 300;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap); //random gap in between
         y = myGameArea.canvas.height;
-        myObstacles.push(new component(60, height, "images/pp.png", x, 0, "image"));
+        myObstacles.push(new component(60, height, "images/logtest.jpg", x, 0, "image"));
         myObstacles.push(new component(70, 25, "images/head.png", x-5, height, "image"));
         myObstacles.push(new component(70, 25, "images/head.png", x-5, height + gap, "image"));
-        myObstacles.push(new component(60, y - height - gap - 150 -25, "images/pp.png", x, height + gap +25,"image")); 
+        myObstacles.push(new component(60, y - height - gap - 150 -25, "images/logtest.jpg", x, height + gap +25,"image")); 
     }           
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
