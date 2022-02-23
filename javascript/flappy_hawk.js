@@ -73,9 +73,9 @@ var myGameArea = {
 function startGame() {
     myGamePiece = new component(70, 70, "images/bird1.png", 700, 245, "image");
     myScore = new component("30px", "Consolas", "black", 1200, 50, "text");
-    myLand = new component(400, 150, "images/land.png", 0, 650, "land");
-    myBackground = new component(1400, 660, "images/background.png", 0, 0, "background");
-    gameover = new component(140, 140, "images/gameover.png", 600, 300, "image");
+    myLand = new component(400, 150, "images/8bitland.jpg", 0, 650, "land");
+    myBackground = new component(1400, 660, "images/pixelforesttest3.jpg", 0, 0, "background");
+    gameover = new component(140, 140, "images/gameover2.png", 600, 300, "image");
     myGameArea.start();
 }
 
@@ -221,8 +221,8 @@ function updateGameArea() {
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap); //random gap in between
         y = myGameArea.canvas.height;
         myObstacles.push(new component(60, height, "images/logtest.jpg", x, 0, "image"));
-        myObstacles.push(new component(70, 25, "images/head.png", x-5, height, "image"));
-        myObstacles.push(new component(70, 25, "images/head.png", x-5, height + gap, "image"));
+        myObstacles.push(new component(70, 25, "images/logtest.jpg", x-5, height, "image"));
+        myObstacles.push(new component(70, 25, "images/logtest.jpg", x-5, height + gap, "image"));
         myObstacles.push(new component(60, y - height - gap - 150 -25, "images/logtest.jpg", x, height + gap +25,"image")); 
     }           
     for (i = 0; i < myObstacles.length; i += 1) {
