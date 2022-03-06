@@ -193,6 +193,9 @@ function updateGameArea() {
     for(i = 0; i < myObstacles.length; i += 1){
         if(myGamePiece.crashWith(myObstacles[i])){
             gameover.update();
+            window.addEventListener('touchstart', function (e) {
+            window.location.reload();
+        })
             myGameArea.stop();
             return;
         }
